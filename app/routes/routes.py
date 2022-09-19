@@ -11,6 +11,7 @@ from app.modules.meetingservice.meetingservice import MeetingService
 
 @app.route("/", methods=["GET"])
 def index():
+    print request.__dict__
     return render_template("pages/index.html")
 
 
